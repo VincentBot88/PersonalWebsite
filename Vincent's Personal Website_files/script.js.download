@@ -1,0 +1,17 @@
+$(document).ready(function() {
+    var previousScroll = 0; // This variable will hold the previous scroll position
+
+    $(window).scroll(function() {
+        var currentScroll = $(this).scrollTop(); // Current scroll position
+
+        // If current scroll is greater than previous scroll (i.e. scrolling down), hide the header
+        if (currentScroll > previousScroll) {
+            $('#mainHeader').slideUp(); // Use slideUp for a smoother effect
+        } else {
+            $('#mainHeader').slideDown(); // Use slideDown for a smoother effect
+        }
+
+        previousScroll = currentScroll; // Set the previous scroll value for the next scroll event
+    });
+});
+
