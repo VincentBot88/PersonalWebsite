@@ -69,12 +69,12 @@ nav {
 
 h3 {
   font-family: 'Tangerine', serif;
-  font-size: 44px; /* Adjust the size as needed */
+  font-size: 54px; /* Adjust the size as needed */
   color: white; /* Change the color to your desired value */
 }
 
 h5 {
-  font-size: 64px; /* Adjust the size as needed */
+  font-size: 84px; /* Adjust the size as needed */
   color: white; /* Change the color to your desired value */
 }
 
@@ -111,10 +111,10 @@ a:hover {
 }
 
 .about {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 70px;
+  margin: 20px auto; /* Center horizontally with equal top and bottom margins */
+  width: 60%; /* You can adjust the width as per your design */
 }
+
 
 .passions {
   padding-top: 30px;
