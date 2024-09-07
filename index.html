@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
   <link href="./Vincent&#39;s Personal Website_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
       <div class="nav-links">
         <ul>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#passions">PERSONAL PASSIONS</a></li>
           <li><a href="#experience">EXPERIENCE</a></li>
           <li><a href="#contact">CONTACT</a></li>
@@ -49,7 +50,8 @@
     <div class="aboutText">
       <h4>About Me</h4>
       <p>Pursuing my passion for technology and innovation, I am currently studying Computer Engineering at Toronto
-        Metropolitan University where I achieved the Dean's List recognition.
+        Metropolitan University where I achieved the Dean's List recognition. In addition to my academic pursuits,
+        I can be found at the gym or tinkering with electronics.
         In an endeavor to channel my innate creativity and fervor for technology, I crafted this website as a personal
         side project. Through conceptualizing, designing, and coding, I aimed to transform my ideas into a digital
         testament to my journey, weaving together the various experiences I've encountered, the skills I've honed, and
@@ -60,10 +62,10 @@
   <section class="pages">
     <div class="row">
       <div class="col">
-        <a href="https://ca8dd7a4-a4b5-4755-85a9-6ae7c00e80e7-00-3dt0len3xgxpd.spock.repl.co/#education">
+        <a href="#projects">
           <img src="./Vincent&#39;s Personal Website_files/education.jpg">
           <div class="layer">
-            <h1>EDUCATION</h1>
+            <h1>PROJECTS</h1>
           </div>
         </a>
       </div>
@@ -88,28 +90,35 @@
 
 
 
-  <div class="education" id="education">
-    <div class="edu-content">
-      <h2>Education</h2>
-      <div class="edu">
-        <h4>Ontario Secondary School Diploma</h4>
-        <h4>St. Augustine CHS, Markham ON</h4>
-        <h6>Sept 2018 - June 2022</h6>
+  <div class="projects" id="projects">
+    <div class="proj-content">
+      <h2>Projects</h2>
+      <div class="proj">
+        <h4>ESP32 Stock Ticker Display</h4>
         <ul>
-          <li>Honour Roll Recipient Grade 9-12</li>
-          <li>Ontario Scholar</li>
-          <li>Highest Achievement for: Music, Math and Religion</li>
-          <li>96% Grade 12 Average</li>
+          <li>Uses an ESP32 to retrieve real-time stock data using the Finnhub Stock API</li>
+          <li>Displays results on an I2C LCD display</li>
+          <li>Includes a red and green LED price change indicators and a button to scroll through stock tickers</li>
+          <li>3D Printed casing with a window for the display</li>
+          <li>Soldered wiring</li>
+          <li>Coded in C++</li>
         </ul>
       </div>
       <div style="margin-bottom: 20px;"></div>
-      <div class="edu">
-        <h4>Bachelor of Engineering - Computer Engineering</h4>
-        <h4>Toronto Metropolitan University, Toronto ON</h4>
-        <h6>Sept 2022 - Present</h6>
+      <div class="proj">
+        <h4>High School Android App</h4>
         <ul>
-          <li>Expected Graduation: April 2027</li>
-          <li>Achieved Dean's List recognition upon completing first year</li>
+          <li>Utilized the Flutter UI software development kit to create an innovative and user-friendly app tailored to the needs of students.</li>
+          <li>Coded in Dart to implement robust and efficient app functionalities</li>
+          <li>Utilized by 85% of the school population</li>
+        </ul>
+      </div>
+      <div style="margin-bottom: 20px;"></div>
+      <div class="proj">
+        <h4>ELE404 Transistor Amplifier Design Project</h4>
+        <ul>
+          <li>Designed, simulated, analyzed, implemented, and tested a single-supply, multistage, inverting, transistor amplifier which fulfills a set of specifications</li>
+          <li>Displays results on an I2C LCD display</li>
         </ul>
       </div>
     </div>
@@ -118,28 +127,6 @@
 
   <div class="passions" id="passions">
     <h2>Personal Passions</h2>
-    <div style="margin-bottom: 20px;"></div>
-    <div class="exp">
-      <h4>St Augustine App Development Team</h4>
-      <p>During my time in high school, I had the incredible opportunity to contribute to the App Development Team, a
-        dynamic initiative where we collectively envisioned, coded, tested, promoted, and launched a dedicated app
-        tailored for our student community. The multifaceted app boasted a rich array of features, including an
-        announcement tab for timely updates, a cafeteria menu for convenient meal planning, a spirit points system to
-        foster engagement, a comprehensive directory of student clubs, and even a song request feature for a touch of
-        personalized entertainment.
-
-        As the Senior Android App Developer for the team, my responsibilities transcended traditional coding tasks. Not
-        only did I play a pivotal role in crafting the app's intricate design and functionality, but I also assumed
-        leadership responsibilities by guiding and mentoring a group of enthusiastic younger students. This hands-on
-        experience allowed for me to not only deepen my technical prowess in coding and design but also to cultivate and
-        refine my leadership skills.
-
-        Joining the App Development Team wasn't just about pursuing my passion for coding; it was a journey of
-        collaborative innovation, where I learned the intricacies of project management, effective communication, and
-        the art of transforming ideas into tangible, user-friendly applications. This immersive experience not only
-        fueled my curiosity for technology but also instilled in me a profound sense of responsibility and leadership,
-        shaping my path towards becoming a well-rounded and effective contributor in both coding and team dynamics.</p>
-    </div>
     <div style="margin-bottom: 20px;"></div>
     <div class="exp">
       <h4>Volleyball</h4>
@@ -220,45 +207,10 @@
     </div>
     <img src="./Vincent&#39;s Personal Website_files/wonderland.jpg" alt="Description" class="experience-image">
   </div>
-  <div class="experience" id="experience">
-    <div class="exp-content">
-      <h2>Volunteer Experience</h2>
-      <div class="exp">
-        <h4>Volleyball Coach</h4>
-        <h4>Jumpstart - Markham, Ontario</h4>
-        <h6>September 2018 - May 2019</h6>
-        <ul>
-          <li>Coached players in the sport of volleyball, focusing on both individual skills and team dynamics.</li>
-          <li>Designed and implemented practice plans, including drills and exercises to improve players' skills and
-            fitness.</li>
-          <li>Provided individual feedback and support to players, including constructive criticism and encouragement to
-            help them improve.</li>
-          <li>Fostered a positive and inclusive team environment, promoting teamwork, sportsmanship, and respect for
-            others.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="experience" id="experience">
-    <div class="exp-content">
-      <div class="exp">
-        <h4>Camp Counsellor</h4>
-        <h4>David Dunlap Observatory - Richmond Hill, Ontario</h4>
-        <h6>July 2018 - August 2018</h6>
-        <ul>
-          <li>Developed and implemented a range of activities and lessons related to astronomy and space science, using
-            interactive and engaging teaching methods to help campers learn and explore.</li>
-          <li>Fostered a positive and inclusive camp environment, promoting teamwork, curiosity, and respect for others.
-          </li>
-          <li>Worked collaboratively with other counselors and camp staff to ensure a safe and enjoyable experience for
-            all </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+</div>
 
-  <script src="./Vincent&#39;s Personal Website_files/jquery-3.6.0.min.js.download"></script>
-  <script src="./Vincent&#39;s Personal Website_files/script.js.download"></script>
+<script src="./Vincent&#39;s Personal Website_files/jquery-3.6.0.min.js.download"></script>
+<script src="./Vincent&#39;s Personal Website_files/script.js.download"></script>
 
 
 </body></html>
