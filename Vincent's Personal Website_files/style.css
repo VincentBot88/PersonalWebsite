@@ -23,8 +23,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
-  /* Arbitrary number, should be higher than the z-index of the rest of the page */
+  z-index: 1000; /* Arbitrary number, should be higher than the z-index of the rest of the page */
   background-color: #FFFFFF;
 }
 
@@ -80,7 +79,7 @@ h5 {
 
 .headertext {
   position: absolute;
-  top: 80%;
+  top: 70%;
   right: 10%;
 }
 
@@ -97,6 +96,7 @@ a {
 
 a:hover {
   color: blue;
+  text-decoration: none;
 }
 
 .aboutText {
@@ -171,10 +171,13 @@ a:hover {
   flex-basis: 32%;
   border-radius: 10px;
   margin-bottom: 30px;
+  margin-right: 10px;
   position: relative;
   overflow: hidden;
   width: 400px; 
   height: 600px; 
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .col img {
@@ -216,5 +219,9 @@ a:hover {
   opacity: 1;
 }
 
+.rounded-carousel {
+  border-radius: 15px; /* Adds rounded corners */
+  height: 500px; /* Adjust height to your preference */
+  object-fit: cover; /* Ensures the image fits inside the container */
+}
 
-/*Experience*/
