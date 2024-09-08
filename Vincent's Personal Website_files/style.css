@@ -116,20 +116,15 @@ a:hover {
 }
 
 
-.passions {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 80px;
-}
-
 .experience {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 80px;
   background-color: #B99095;
-  display: flex; /* This will make its children (the image and the .exp div) sit side by side */
-  align-items: start; /* Align the top of children elements to the top of the .experience div */
-  justify-content: flex-start;
+}
+
+.exp-content{
+  margin: 20px auto; /* Center horizontally with equal top and bottom margins */
+  width: 60%; /* You can adjust the width as per your design */
 }
 
 .experience-image {
@@ -154,9 +149,13 @@ a:hover {
   width: 60%; /* You can adjust the width as per your design */
 }
 
+.rounded-corners {
+  border-radius: 10px; /* Adjust the value to your preference */
+}
+
 .pages {
-  width: 80%;
-  margin: auto;
+  width: 60%;
+  margin: 20px auto;
   text-align: center;
   padding-top: 50px;
 }
@@ -175,7 +174,7 @@ a:hover {
   position: relative;
   overflow: hidden;
   width: 400px; 
-  height: 600px; 
+  height: 500px; 
   box-sizing: border-box;
   padding: 0;
 }
